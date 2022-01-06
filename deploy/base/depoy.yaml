@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: pingwazi
+  name: gocode
+spec:
+  selector:
+    matchLabels:
+      app: gocode
+  template:
+    metadata:
+      labels:
+        app: gocode
+    spec:
+      containers:
+        - name: gocode
+          image: pingwazi0101/imagename
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
