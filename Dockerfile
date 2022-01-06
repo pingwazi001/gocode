@@ -16,7 +16,7 @@ WORKDIR /app
 # 从上一阶段中拷贝可执行文件
 COPY --from=builder /app/bin/app /app/bin/app
 # 声明暴露的端口
-EXPOSE 8080/tcp
+EXPOSE 9000/tcp
 # 调整动态链接地址
 RUN mkdir /lib64 && ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2
 # 启动服务

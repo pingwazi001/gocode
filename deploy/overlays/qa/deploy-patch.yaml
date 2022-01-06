@@ -1,0 +1,3 @@
+- op: repalce
+  path: /spec/template/spec/containers/0/env/value
+  value: qa

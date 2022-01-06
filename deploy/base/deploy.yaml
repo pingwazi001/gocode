@@ -16,10 +16,13 @@ spec:
         - name: pwz-secret
       containers:
         - name: gocode
+          env:
+            - name: ENV
+              value: prod
           image: pingwazi0101/imagename
           resources:
             limits:
               memory: "128Mi"
               cpu: "500m"
           ports:
-            - containerPort: 8080
+            - containerPort: 9000
