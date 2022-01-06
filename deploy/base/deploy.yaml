@@ -12,6 +12,8 @@ spec:
       labels:
         app: gocode
     spec:
+      imagePullSecrets:
+        - name: pwz-secret
       containers:
         - name: gocode
           image: pingwazi0101/imagename
