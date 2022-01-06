@@ -4,6 +4,7 @@ metadata:
   namespace: pingwazi
   name: gocode
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: gocode
