@@ -4,6 +4,7 @@ metadata:
   name: gocode
   namespace: pingwazi
 spec:
+  type: NodePort
   selector:
     app: gocode
   ports:
